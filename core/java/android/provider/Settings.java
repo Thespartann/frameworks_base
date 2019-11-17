@@ -4520,27 +4520,6 @@ public final class Settings {
         public static final String MEDIAPROJECTION_SYSUI_OK = "mediaprojection_sysui_ok";
 
         /**
-         *  Enable statusbar double tap gesture on to put device to sleep
-         * @hide
-         */
-        public static final String DOUBLE_TAP_SLEEP_GESTURE = "double_tap_sleep_gesture";
-
-        /** @hide */
-        private static final Validator DOUBLE_TAP_SLEEP_GESTURE_VALIDATOR =
-                BOOLEAN_VALIDATOR;
-
-        /**
-         * Double tap on lockscreen to sleep
-         * @hide
-         */
-        public static final String DOUBLE_TAP_SLEEP_LOCKSCREEN =
-                "double_tap_sleep_lockscreen";
-
-        /** @hide */
-        private static final Validator DOUBLE_TAP_SLEEP_LOCKSCREEN_VALIDATOR =
-                BOOLEAN_VALIDATOR;
-
-        /**
          * Three Finger Gesture from Oppo
          * @hide
          */
@@ -4620,7 +4599,6 @@ public final class Settings {
             NOTIFICATION_LIGHT_PULSE,
             SCREENSHOT_SHUTTER_SOUND,
             DOUBLE_TAP_SLEEP_GESTURE,
-            DOUBLE_TAP_SLEEP_LOCKSCREEN,
         };
 
         /**
@@ -4742,7 +4720,6 @@ public final class Settings {
             PRIVATE_SETTINGS.add(DISPLAY_COLOR_MODE);
             PRIVATE_SETTINGS.add(SCREENSHOT_SHUTTER_SOUND);
             PRIVATE_SETTINGS.add(DOUBLE_TAP_SLEEP_GESTURE);
-            PRIVATE_SETTINGS.add(DOUBLE_TAP_SLEEP_LOCKSCREEN);
         }
 
         /**
@@ -4838,9 +4815,6 @@ public final class Settings {
             VALIDATORS.put(NOTIFICATION_LIGHT_PULSE, BOOLEAN_VALIDATOR);
             VALIDATORS.put(SCREENSHOT_SHUTTER_SOUND,
                     SCREENSHOT_SHUTTER_SOUND_VALIDATOR);
-                    DOUBLE_TAP_SLEEP_GESTURE_VALIDATOR);
-            VALIDATORS.put(DOUBLE_TAP_SLEEP_LOCKSCREEN,
-                    DOUBLE_TAP_SLEEP_LOCKSCREEN_VALIDATOR);
             VALIDATORS.put(ACCELEROMETER_ROTATION_ANGLES, ACCELEROMETER_ROTATION_ANGLES_VALIDATOR);
         }
 
